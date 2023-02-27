@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Biodata</title>
+    </head>
+        <body style="text-align:center; background-color: rgba(3, 93, 145, 0.918);">
+            <div class="container">
+            <div class="row col-md-6 col-md-offset-3">
+            <div class="panel panel-primary">
+            <div class="panel-heading text-center">
+    <div style="background-color: aliceblue;">
+                <h1>Biodata Form</h1>
+            </div>
+            </div>
+            <div class="panel-body">
+    <form action="connect.php" method="post">
+            <div class="form-group">
+            <label for="firstName">First Name:</label>
+            <input type="text" class="form-control" id="firstName" name="firstName"/>
+            </div>
+            <div class="form-group">
+            <label for="lastName">Last Name:</label>
+            <input type="text" class="form-control" id="lastName" name="lastName"/>
+            </div>
+            <div class="form-group">
+            <label for="gender">Gender:</label>
+            
+            <label for="male" class="radio-inline">
+            <input type="radio" name="gender" value="m"id="male"/>Male</label>
+            <label for="female" class="radio-inline">
+            <input type="radio" name="gender" value="f" id="female"/>Female</label>
+            <label for="others" class="radio-inline" >
+            <input type="radio" name="gender"value="o" id="others" />Others</label>
+            </div>
+            </div>
+<form>Occupation:
+    <input type="checkbox" id="student" name="student1" value="student">
+    <label for="student1"> Student</label> 
+    <input type="checkbox" id="employed" name="employed2" value="employed">
+    <label for="vehicle2"> Employed</label>
+    <input type="checkbox" id="Unemployed3" name="unemployed3" value="unemployed">
+    <label for="vehicle3"> Unemployed</label>
+  </form>
+  
+<div class="form-group">
+    <label for="email">Email</label>
+<input type="text" class="form-control" id="email" name="email"/>
+</div>
+<div class="form-group">
+<label for="password">Password:</label>
+<input
+type="password"
+class="form-control"
+id="password"
+name="password"
+/>
+</div>
+<div class="form-group">
+<label for="number">Phone Number:</label>
+<input
+type="number"
+class="form-control"
+id="number"
+name="number"
+/>
+</div>
+<label for="choose place-select">What is your place:</label>
+
+<select name="pets" id="choose place-select">
+    <option value="">--Please choose an option--</option>
+    <option value="manila">Manila</option>
+    <option value="bacolod">Bacolod</option>
+    <option value="cavite">Cavite</option>
+    <option value="cebu">Cebu</option>
+    <option value="davao">Davao</option>
+</select>
+    <br>
+    <label for="choose status-select">Marital Status:</label>
+<select name="status" id="choose status-select">
+    <option value="">--Please choose an option--</option>
+    <option value="married">Married</option>    
+    <option value="single">Single</option>    
+    <option value="married">Married</option>   
+    <option value="widowed">Widowed</option> 
+    <option value="divorced">Divorced</option>
+</select>
+    <br>
+    <input type="submit" class="btn btn-primary" />
+    </form>
+    </div>
+            This is my Biodata
+    </div>
+    </div>
+</body>
+</html>
