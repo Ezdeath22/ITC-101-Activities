@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> 
+            Basic Javascript
+        </title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <p id="paragraphA"></p>
+        <p id="paragraphB"></p>
+        <p id="paragraphC">Hello World</p>
+        <p id="paragraphD">Hello World</p>
+        <p id="paragraphE">Hello World</p>
+    <script>
+        document.getElementById("paragraphA") .innerHTML = "ABC";
+        document.getElementById("paragraphA") .style.fontWeight = "bold";
+        document.getElementById("paragraphA") .style.fontSize = "20px";
+        document.getElementById("paragraphB") .innerHTML = "DEF";
+        document.getElementById("paragraphB") .style.color = "red";
+        var getDate = new Date();
+        alert (getDate);
+        document.getElementById("paragraphD") .innerText = getDate;
+        var paragraphEContent = document.getElementById("paragraphE") .textContent;
+        document.getElementById("paragraphE") .innerText = strLowercase (paragraphEContent);
+        function strLowercase (value)
+        {
+            return value.toString().toLowerCase();
+        }
+
+    </script>
+    </body>
+</html>
